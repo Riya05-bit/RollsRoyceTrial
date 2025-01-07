@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: #000;
+    color: #fff;
+    display:flex;
+    padding: 1vw;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo{
+    /* border: 2px solid green; */
+    padding: 1vw;
+    margin:0 1vw;
+    animation: logoAnime linear infinite;
+}
+.logo img{
+    width: 8vw;
+    height: 4.5vw;
+    border-radius:50%;
+}
+nav ul li{
+    width:8vw;
+    list-style: none;
+    float:left;
+    font-size: 1.5vw;
+  font-family: "Briem Hand", cursive;
+  /* font-family: cursive; */
+  font-weight: 400;
+}
+
+#hamb{
+    font-weight: 900;
+    color: aliceblue;
+    padding:0 .2vw
+}
+
+.container{
+    width:100%;
+    height: 100vh;
+}
+.container .img{
+    background-image: url('https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .section{
+        font-size: 4vw;
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        /* inset:0; */
+        top:5vw;
+        /* background:rgba(255 255 255 .4); */
+        background-color: rgba(255, 255, 255, 0.4);
+        opacity: 0;
+    }
+    .section:hover{
+        transition: 200ms ease;
+        opacity:1;
+        cursor: pointer;
+}
+.section:hover .container{
+    filter: blur(50px);
+}
+.Pricingcards{
+    display: flex;
+    margin-top:1vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url('https://i.pinimg.com/originals/c1/d0/21/c1d021212f09bf48484af25321a917af.jpg');
+    background-repeat: no-repeat;
+    margin-top: 2vw;
+    background-size: cover;
+}
+.card-1{
+width: 27vw;
+height:70vh;
+background-color: rgba(255, 255, 255, 0.3);
+border-radius: 1.5vw;
+}
+.card-2{
+    width: 27vw;
+    height:70vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.5vw;
+}
+.card-3{
+    width: 27vw;
+    height:70vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.5vw;
+}
+.card-4{
+    width: 27vw;
+    height:70vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.5vw;
+    margin-top: 2vw;
+}
+.card-5{
+width: 27vw;
+height:70vh;
+background-color: rgba(255, 255, 255, 0.3);
+border-radius: 1.5vw;
+margin-top: 2vw;
+}
+.card-6{
+    width: 27vw;
+    height:70vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.5vw;
+    margin-top: 2vw;
+}
+.img1 img{
+    border-radius: 50%;
+    border:1px solid;
+    width:12vw;
+    height:12vw;
+    margin: 1vw 7.5vw;
+    background:#4d4951;
+}
+.Pricingcards h1{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 11vw;
+    margin: auto;
+}
+.Pricingcards p{
+    color: #fff;
+    margin: 2vw 0.9vw;
+    font-size: 1.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* width: 11vw; */
+    /* margin: auto; */
+}
+.Pricingcards button{
+    margin: 2vw 0.5vw;
+    font-size: 1.1vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 11vw;
+    height:3vw;
+    margin: 1vw 7.7vw;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+.PopupBox{
+   display: flex;
+   height: 200vh;
+   align-items:start;
+   flex-direction: column;
+   background: url('https://i.ebayimg.com/images/g/EJYAAOSwS2ZkFwhi/s-l1200.jpg');
+   background-size:cover;
+   width:100%;
+}
+.Pricingcards .card-1:hover{
+    background-color:#4d4953;
+    cursor: pointer;
+}
+.Pricingcards .card-2:hover{
+    background-color:#4d4953;
+    cursor: pointer;
+}
+.Pricingcards .card-3:hover{
+    background-color:#4d4953;
+    cursor: pointer;
+}
+.Pricingcards .card-4:hover{
+    background-color:#4d4953;
+    cursor: pointer;
+}
+.Pricingcards .card-5:hover{
+    background-color:#4d4953;
+    cursor: pointer;
+}
+.Pricingcards .card-6:hover{
+    background-color:#4d4953;
+    cursor: pointer;
+}
+
+
+
+
+/*
+.circle{
+    margin-top: 1vw;
+    padding:12vw 10vw;
+    border-radius: 50%;
+    border: 5px solid cyan;
+    height: 5vw;
+    animation:circle1 5s linear infinite;
+    color: #0f29bd;
+    position:absolute;
+    top: 200vw;
+}
+.circle h1{
+    cursor: pointer;
+    font-size: 5vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  @keyframes circle1 {
+    0%{
+        transform: rotate(200deg);
+        top: 140vw;
+        /* padding: 50vw; 
+    }
+    50%{
+        transform: rotate(50deg);
+        top:120vw;
+    }
+    100%{
+        transform: rotate(200deg);
+        top:100vw;
+    }
+}  */
